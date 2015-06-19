@@ -12,11 +12,10 @@
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="component.css" />
     <script src="js/modernizr.custom.js"></script>
-
+   <link rel="stylesheet" type="text/css" href="css/blog-home" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
                <!--instafeed.js (for showing instagram feed)-->
      <script src="js/instafeed.min.js"></script>
-  </head>
-  </body>
 
 
      <script src="js/instafeed.min.js"></script>
@@ -27,7 +26,7 @@
         userId: 1552817979,
         accessToken: '1552817979.467ede5.aedcc0ee538d4c4ba0419d5db7e449e4',
         useHttp: true,
-        limit: 9,
+        limit: 50,
         resolution: 'low_resolution',
   after: function () {
     var images = $("#instafeed").find('a');
@@ -53,6 +52,41 @@
     <script>
       new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
     </script>
+
+  </head>
+  </body>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Hello Iceland</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="stories.html">Stories</a>
+                    </li>
+                    <li>
+                        <a href="instagram.html">#YoungIceland</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<br>
+<br>
+
 
         <div class ="row">
     <div class = "container-fluid">
