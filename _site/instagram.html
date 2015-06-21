@@ -22,11 +22,11 @@
 
 <script type="text/javascript">
     var userFeed = new Instafeed({
-        get: 'user',
-        userId: 1552817979,
+        get: 'tagged',
+        tagName: 'Iceland',
         accessToken: '1552817979.467ede5.aedcc0ee538d4c4ba0419d5db7e449e4',
         useHttp: true,
-        limit: 50,
+        limit: 200,
         resolution: 'low_resolution',
   after: function () {
     var images = $("#instafeed").find('a');
