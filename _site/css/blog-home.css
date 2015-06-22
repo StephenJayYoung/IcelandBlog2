@@ -46,3 +46,8 @@ footer {
   height: auto;
 }
 /* end instafeed stuff */
+
+.navbar {
+  color: red;
+  background-color: blue;
+}
