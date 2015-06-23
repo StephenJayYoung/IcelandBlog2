@@ -49,5 +49,10 @@ footer {
 
 #title{
   color: blue;
-  font-weight: 25px;
+  font-size: 25px;
+}
+
+#tags{
+  color: blue;
+  font-size: 18px;
 }
