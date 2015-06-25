@@ -9,25 +9,26 @@
     <meta name="keywords" content="jekyll, image gallery, image grid, template, masonry" />
     <meta name="author" content="Nii Adjetey Sowah" />
 
-    <link rel="stylesheet" type="text/css" href="http://nadjetey.github.io/GridGallery//css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="http://nadjetey.github.io/GridGallery//css/component.css" />
-    <script src="http://nadjetey.github.io/GridGallery//js/modernizr.custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="component.css" />
+   <link rel="stylesheet" type="text/css" href="css/blog-home.css" />
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+       <script src="js/modernizr.custom.js"></script>
                <!--instafeed.js (for showing instagram feed)-->
      <script src="js/instafeed.min.js"></script>
-  </head>
-  </body>
 
 
      <script src="js/instafeed.min.js"></script>
 
 <script type="text/javascript">
     var userFeed = new Instafeed({
-        get: 'user',
-        userId: 1111,
-        accessToken: '1111',
+        get: 'tagged',
+        tagName: 'Iceland',
+        accessToken: '1552817979.467ede5.aedcc0ee538d4c4ba0419d5db7e449e4',
         useHttp: true,
-        limit: 9,
+        limit: 200,
         resolution: 'low_resolution',
   after: function () {
     var images = $("#instafeed").find('a');
@@ -46,10 +47,6 @@
     userFeed.run();
 </script>
 
-
-
-
-
     <script src="http://nadjetey.github.io/GridGallery//js/imagesloaded.pkgd.min.js"></script>
     <script src="http://nadjetey.github.io/GridGallery//js/masonry.pkgd.min.js"></script>
     <script src="http://nadjetey.github.io/GridGallery//js/classie.js"></script>
@@ -57,5 +54,47 @@
     <script>
       new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
     </script>
+
+  </head>
+  </body>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Hello Iceland</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="stories.html">Stories</a>
+                    </li>
+                    <li>
+                        <a href="instagram.html">#YoungIceland</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<br>
+<br>
+
+        <div class ="row">
+    <div class = "container-fluid">
+            <div class="caption-full text-center">
+                <div id="instafeed"></div>
+            </div>
+        </div>
+    </div>
   </body>
 </html>

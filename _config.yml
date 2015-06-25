@@ -1,7 +1,7 @@
-name: Hello Iceland
+name: Hello Icelan
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:title/
 author:
-    name: Nii Adjetey Sowah (edited by Stephen Young)
+    name: Stephen Young
     twitter: #
