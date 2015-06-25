@@ -1,6 +1,7 @@
-name: Hello IcelanD
+name: Hello Iceland
 markdown: redcarpet
 pygments: true
+url: http://stephenjayyoung.github.io/IcelandBlog2/ 
 permalink: /:year/:month/:title/
 author:
     name: Stephen Young
